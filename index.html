@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            font-size: calc(12px + (20 - 12) * ((100vw - 415px) / (1600 - 415)))
+        }
+
+        h1 {
+            font-weight: 300;
+            margin: 2vw;
+        }
+
+        p {
+            margin: 2vw;
+        }
+
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .thumb {
+            display: flex;
+            flex-direction: column;
+            margin: 2vw;
+            background-color: rgb(60, 180, 244);
+            border: 1px solid white;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .thumb:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        img {
+            height: 140px;
+        }
+
+        span {
+            background-color: white;
+            padding: 0.5vw;
+        }
+
+        @media screen and (max-width: 415px) {
+            body {
+                font-size: 12px;
+            }
+            
+            .container {
+                justify-content: center;
+            }
+
+            img {
+                width: 210.13px;
+            }
+        }
+
+        @media screen and (min-width: 1600px) {
+            body {
+                font-size: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+    <div class="container">
+        <div class="thumb">
+            <img src="placeholder-image.png" alt="placeholder">
+            <span>Image Title</span>
+        </div>
+
+        <div class="thumb">
+            <img src="placeholder-image.png" alt="placeholder">
+            <span>Image Title</span>
+        </div>
+
+        <div class="thumb">
+            <img src="placeholder-image.png" alt="placeholder">
+            <span>Image Title</span>
+        </div>
+
+        <div class="thumb">
+            <img src="placeholder-image.png" alt="placeholder">
+            <span>Image Title</span>
+        </div>
+
+        <div class="thumb">
+            <img src="placeholder-image.png" alt="placeholder">
+            <span>Image Title</span>
+        </div>
+
+        <div class="thumb">
+            <img src="placeholder-image.png" alt="placeholder">
+            <span>Image Title</span>
+        </div>
+        <div class="thumb">
+            <img src="placeholder-image.png" alt="placeholder">
+            <span>Image Title</span>
+        </div>
+
+        <div class="thumb">
+            <img src="placeholder-image.png" alt="placeholder">
+            <span>Image Title</span>
+        </div>
+
+        <div class="thumb">
+            <img src="placeholder-image.png" alt="placeholder">
+            <span>Image Title</span>
+        </div>
+
+        <div class="thumb">
+            <img src="placeholder-image.png" alt="placeholder">
+            <span>Image Title</span>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate vulputate viverra. Aliquam elementum semper erat, a euismod turpis ullamcorper at. Etiam eu finibus lorem. Sed feugiat lorem felis, non viverra elit laoreet ut. Integer vitae nunc mollis, tristique mi nec, venenatis diam. Duis quis leo erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam in auctor eros, vitae malesuada neque. Cras sit amet felis ac sem accumsan tristique. Praesent rutrum sem tempus purus finibus lacinia. In tincidunt ornare eros et feugiat. Donec in mattis turpis, eget imperdiet metus. Curabitur augue eros, facilisis venenatis quam at, molestie mollis sem. Pellentesque non nisi magna.</p>
+</body>
+</html>
